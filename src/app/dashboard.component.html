@@ -1,0 +1,28 @@
+<div class="grid grid-pad">
+<h3> Let's get started! </h3>
+  <h4> Look at the image below for 5 seconds. Then select the occupation, jobs, and eduation that you think best fits the person. </h4>
+  <img src="app/starbucksCTO.jpg" alt="Starbucks CTO" style="width:304px;height:275px;padding:20px">
+
+  <div class="Occupation">
+      <label>Occupation: </label>
+      <input [(ngModel)]=Occupation placeholder="Occupation Dropdown">
+    </div>
+
+    <div class="Hobbies">
+      <label>Hobbies: </label>
+      <input [(ngModel)]=Hobbies placeholder="Hobbies Dropdown">
+    </div>
+
+    <div class="Education">
+      <label>Education: </label>
+      <input [(ngModel)]=Education placeholder="Education Dropdown">
+    </div>
+
+  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+
+  <div class="module hero">
+      <h4>Continue</h4>
+    </div>
+    
+  </a>
+</div>
